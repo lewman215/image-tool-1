@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: skyblue;
+    font-weight: bold;
+    font-family: arial;
+  }
+
+  .main-image {
+      width: 100%;
+      height: auto;
+  }
+
+  .positions {
+      position: absolute;
+  }

@@ -1,0 +1,30 @@
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+    <div class='positions'>
+    Position X: <span id="posX">NaN</span>%<br/>
+    Position Y: <span id="posY">NaN</span>%
+    </div>
+    <div id='image-wrap'>
+        <img class='main-image' src="camplootspots1.jpg">
+    </div>
+</body>
+<script type="text/javascript">
+// Container and displays
+const container = document.getElementById("image-wrap");
+let posXDisplay = document.getElementById("posX");
+let posYDisplay = document.getElementById("posY");
+
+// On mousemove
+container.addEventListener("mousemove", (e)=> {
+  // Do mathz
+  xPercent = parseInt(e.pageX / window.innerWidth * 100);
+  yPercent = parseInt(e.pageY / window.innerHeight * 100);
+  
+  // Display numbers
+  posXDisplay.innerText = xPercent;
+  posYDisplay.innerText = yPercent;
+});
+</script>
+
